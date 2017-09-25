@@ -1,12 +1,12 @@
 package Annotation.definition;
 
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
-import cucumber.annotation.en.Given;
-import cucumber.annotation.en.Then;
-import cucumber.annotation.en.When;
 
 public class annotation {
     WebDriver driver = null;
@@ -25,7 +25,7 @@ public class annotation {
     @When ("^I enter password as \"(.*)\"$")
     public void enterPassword(String arg1) {
         driver.findElement(By.id("pass")).sendKeys(arg1);
-        driver.findElement(By.id("u_0_v")).click();
+        driver.findElement(By.id("u_0_2")).click();
     }
 
     @Then("^Login should fail$")

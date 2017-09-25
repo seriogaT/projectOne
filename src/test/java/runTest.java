@@ -1,8 +1,9 @@
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
-import cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@Cucumber.Options( features = "D:\\intellij-workspace\\src\\test\\java\\Annotation\\features" )
+@CucumberOptions(features = "D:\\intellij-workspace\\src\\test\\java\\Annotation\\features\\annotation.feature")
 
 public class runTest {
 
